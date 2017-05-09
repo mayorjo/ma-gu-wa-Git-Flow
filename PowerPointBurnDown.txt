@@ -1,0 +1,7 @@
+
+Pour le PowerPoint : 
+Problème rencontré : Pour un Product BurnDown les point sont considéré comme consumé
+le product owner les à mis comme "Done
+MAIS 
+Lorsque c'est un sprint BurnDown cette manière de faire n'est pas possible nous avons donc
+mis les points consumé lorsque la User Story passait en "To be reviewe
