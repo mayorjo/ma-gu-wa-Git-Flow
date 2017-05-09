@@ -1,0 +1,11 @@
+Jérôme : 	Création du design du site et des formulaire + PHP du premier formulaire
+		Problème : -
+		Mise en place de GIT FLOW / Spint Review / Retrospective
+
+Jonathan : 	Finition des données de la BDD
+		Problème : -
+		Mise en place de GIT FLOW / Spint Review / Retrospective
+
+Timothée : 	Finition de la BDD avec Jonathan + Aide de Jérôme si problème + mise en place du nouveau Trello
+		Problème : -
+		Mise en place de GIT FLOW / Spint Review / Retrospective

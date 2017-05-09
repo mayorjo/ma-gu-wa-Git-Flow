@@ -1,0 +1,105 @@
+#form{
+    margin: auto;
+    position: relative;
+    background-color: #caf1eb;
+    opacity: 0.98;
+    width: 70vmin;
+    height: 55vmin;
+    padding: 1.5%;
+    border-radius: 2%;
+}
+
+body{
+    background-image: url("../../ressources/images/registerStudent.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+H2{
+    text-align: center;
+    font-size: 4vmin;
+    padding-bottom: 2vmin;
+}
+
+form{
+    width: 70vmin;
+    height: 60vmin;
+}
+
+button{
+    font-size: 1.8vmin;
+    position: absolute;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3vmin;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    width: 12vmin;
+    height: 4.4vmin;
+    text-align: center;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #00b0ff;
+    color: white;
+    font-weight: bold;
+}
+
+#submit{
+    margin-right: 15vmin;
+}
+
+#reset{
+    margin-left: 15vmin;
+}
+
+.champs, select, textarea{
+    padding: 1vmin;
+    width: 30vmin;
+    height: 4vmin;
+    border: none;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 0.2vmax;
+    margin-bottom: 2vmin;
+    background-color: white;
+}
+
+.right{
+    float: right;
+}
+
+.left{
+    float: left;
+}
+
+.toCompleet{
+    color: red;
+}
+
+.titleForm{
+    margin: 0.5vmax;
+    font-size: 1.8vmin;
+}
+
+.numbre{
+    width: 10vmin;
+}
+
+#street{
+    width: 50vmin;
+}
+
+#city{
+    width: 20vmin;
+}
+
+#avs{
+    width: 68vmin;
+}
