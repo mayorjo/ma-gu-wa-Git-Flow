@@ -5,7 +5,8 @@
  * Summary: page JS qui va regarder le formulaire est validé les entrées
  */
 
-function checkForm(form){
+
+function checkForm(form) {
 
     var regexName = new RegExp("^[a-zA-Z\-\ \é\è\ö]+$");
     var regexMail = new RegExp("^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]{2,}\.[a-z]{2,4}$");
@@ -35,100 +36,79 @@ function checkForm(form){
     var testSeven = false;
     var testEight = false;
 
+    alert("hello");
 
-    if(form[0].value == "" || resultOne == false)
-    {
+    if (form[0].value == "" || resultOne == false) {
         testOne = false;
         form[0].style.borderColor = "red";
         form[0].value = "";
-    }else
-    {
+    } else {
         form[0].style.borderColor = "";
         testOne = true;
     }
 
-    if(form[1].value == "" || resultTwo == false)
-    {
+    if (form[1].value == "" || resultTwo == false) {
         testTwo = false;
         form[1].style.borderColor = "red";
         form[1].value = "";
-    }else
-    {
+    } else {
         form[1].style.borderColor = "";
         testTwo = true;
     }
 
-    if(form[2].value == "" || resultThree == false)
-    {
+    if (form[2].value == "" || resultThree == false) {
         testThree = false;
         form[2].style.borderColor = "red";
         form[2].value = "";
-    }else
-    {
+    } else {
         form[2].style.borderColor = "";
         testThree = true;
     }
 
-    if(form[3].value  == "" || resultFour == false)
-    {
+    if (form[3].value == "" || resultFour == false) {
         testFour = false;
         form[3].style.borderColor = "red";
         form[3].value = "";
-    }else
-    {
+    } else {
         form[3].style.borderColor = "";
         testFour = true;
     }
 
-    if(form[4].value  == "" || resultFive == false)
-    {
-        testFour = false;
+    if (form[4].value == "" || resultFive == false) {
+        testFive = false;
         form[4].style.borderColor = "red";
         form[4].value = "";
-    }else
-    {
+    } else {
         form[4].style.borderColor = "";
         testFive = true;
     }
 
-    if(form[5].value  == "" || resultSix == false)
-    {
-        testFour = false;
+    if (form[5].value == "" || resultSix == false) {
+        testSix = false;
         form[5].style.borderColor = "red";
         form[5].value = "";
-    }else
-    {
+    } else {
         form[5].style.borderColor = "";
         testSix = true;
     }
 
-    if(form[6].value  == "" || resultSeven == false)
-    {
-        testFour = false;
+    if (form[6].value == "" || resultSeven == false) {
+        testSeven = false;
         form[6].style.borderColor = "red";
         form[6].value = "";
-    }else
-    {
+    } else {
         form[6].style.borderColor = "";
         testSeven = true;
     }
 
-    if(form[7].value  == "" || resultEight == false)
-    {
-        testFour = false;
+   if (form[7].value == "" || resultEight == false) {
+        testEight = false;
         form[7].style.borderColor = "red";
         form[7].value = "";
-    }else
-    {
+    } else {
         form[7].style.borderColor = "";
         testEight = true;
     }
 
-    if (testOne == false || testTwo == false || testThree == false || testFour == false || testFive == false || testSix == false || testSeven == false || testEight == false)
-    {
-        return false;
-    }else
-    {
-        return true;
-    }
+    return !(testOne == false || testTwo == false || testThree == false || testFour == false || testFive == false || testSix == false || testSeven == false || testEight == false);
 }

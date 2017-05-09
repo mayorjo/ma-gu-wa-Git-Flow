@@ -10,7 +10,7 @@ include "include/head.php"
 <link rel="stylesheet" type="text/css" href="../../ressources/css/registerTeacher.css">
 <body>
     <div id="form">
-        <form action="traitement/registerTeacherTraitement.php" method="POST" enctype="multipart/form-data">
+        <form action="traitement/registerTeacherTraitement.php" method="POST" enctype="multipart/form-data" onsubmit="return checkForm(this)">
 
             <h2>INSCRIPTION</h2>
 
