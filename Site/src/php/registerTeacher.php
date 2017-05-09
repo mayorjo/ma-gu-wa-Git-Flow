@@ -10,7 +10,7 @@ include "include/head.php"
 <link rel="stylesheet" type="text/css" href="../../ressources/css/registerTeacher.css">
 <body>
     <div id="form">
-        <form action="#" method="POST" enctype="multipart/form-data">
+        <form action="traitement/registerTeacherTraitement.php" method="POST" enctype="multipart/form-data">
 
             <h2>INSCRIPTION</h2>
 
@@ -21,7 +21,7 @@ include "include/head.php"
 
             <div class="right">
                 <span class="titleForm">Prénom</span><br>
-                <input class="champs" type="text" name="lastname" placeholder="..."><br>
+                <input class="champs" type="text" name="firstname" placeholder="..."><br>
             </div>
 
             <div class="left">
@@ -40,7 +40,7 @@ include "include/head.php"
             </div>
 
             <div class="right">
-                <span class="titleForm">N°</span><br>
+                <span class="titleForm">NPA°</span><br>
                 <input class="champs numbre" type="text" name="streetNumbre" placeholder="..."><br>
             </div>
 
