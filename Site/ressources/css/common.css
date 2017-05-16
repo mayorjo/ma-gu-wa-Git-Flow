@@ -27,9 +27,10 @@ ul li a:hover{
 
 header{
     background-color: #b1d3b9;
-    width: 100%;
+    width: 98.2%;
     height: 4vmin;
     padding-top: 2vmin;
+    padding-left: 3vmin;
 }
 
 /************************NAV************************/
@@ -43,16 +44,17 @@ ul li{
 
 body {
     display: flex;
-    min-height: 100vh;
+    min-height: 100vmin;
     flex-direction: column;
 }
 
 /***********************SECTION*********************/
 
 section{
-    background-color: #cfeefa;
-    height: 73vmin;
-    width: 100vmin;
+    height: 77vh;
+    width: 50%;
+    background-color: white;
+    opacity: 0.98;
     margin: 0 auto;
     padding: 2vmin 10vmin 10vmin;
 }
@@ -60,10 +62,17 @@ section{
 /***********************FOOTER**********************/
 
 footer{
+    position: fixed;
+    bottom: 0;
     color: white;
     background-color: #b1d3b9;
     width: 100%;
     font-size: 1.13vmax;
     text-decoration: none;
     height: 5vmin;
+}
+
+#copyright{
+    margin-top: 1.4vmin;
+    margin-left: 5vmin;
 }

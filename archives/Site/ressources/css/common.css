@@ -1,0 +1,69 @@
+/**
+*   ETML
+*   Auteur : Jérôme Wassenberg
+*   Date : 21.03.2017
+*   Description : Page de style générale
+**/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+ul li a{
+    color: white;
+    font-size: 1.13vmax;
+    text-decoration: none;
+    margin-left: 5.5vmin;
+}
+ul li a:visited{
+    text-decoration: none;
+}
+ul li a:hover{
+    text-decoration: none;
+}
+
+/***********************HEADER**********************/
+
+header{
+    background-color: #b1d3b9;
+    width: 100%;
+    height: 4vmin;
+    padding-top: 2vmin;
+}
+
+/************************NAV************************/
+
+ul li{
+    display: inline;
+    margin-left: 5%;
+}
+
+/************************BODY***********************/
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/***********************SECTION*********************/
+
+section{
+    background-color: #cfeefa;
+    height: 73vmin;
+    width: 100vmin;
+    margin: 0 auto;
+    padding: 2vmin 10vmin 10vmin;
+}
+
+/***********************FOOTER**********************/
+
+footer{
+    color: white;
+    background-color: #b1d3b9;
+    width: 100%;
+    font-size: 1.13vmax;
+    text-decoration: none;
+    height: 5vmin;
+}

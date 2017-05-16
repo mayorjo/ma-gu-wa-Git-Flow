@@ -1,13 +1,13 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: wassenbeje
- * Date: 05.04.2017
- * Time: 15:31
+ * ETML
+ * Auteur: Jérôme Wassenberg
+ * Date: 21.03.2017
+ * Description: Page d'inscription à un cours
  */
 include "include/head.php"
 ?>
-    <link rel="stylesheet" type="text/css" href="../../ressources/css/registerStudent.css">
+    <link rel="stylesheet" type="text/css" href="../../ressources/css/registerToCours.css">
     <body>
     <div id="form">
         <form action="#" method="POST" enctype="multipart/form-data">

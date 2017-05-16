@@ -2,13 +2,13 @@
 *   ETML
 *   Auteur : Jérôme Wassenberg
 *   Date : 21.03.2017
-*   Description : Page de style de la page d'inscription des enseignants
+*   Description : Page de style de la page d'inscription à un cours
 **/
 
 #form{
     margin: auto;
     position: relative;
-    background-color: #caf1eb;
+    background-color: #b6dcf1;
     opacity: 0.98;
     width: 70vmin;
     height: 55vmin;
@@ -17,10 +17,10 @@
 }
 
 body{
-    background-image: url("../../ressources/images/registerTeacher.jpg");
-    background-size: 100%;
+    background-image: url("../../ressources/images/registerStudent.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
 }
 
 H2{
@@ -108,5 +108,5 @@ button:hover{
 }
 
 #avs{
-    width: 32vmin;
+    width: 68vmin;
 }

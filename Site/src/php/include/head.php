@@ -20,9 +20,6 @@
         <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="../../ressources/css/common.css">
         <link rel="stylesheet" type="text/css" href="../../ressources/css/login.css">
-        <script src="../../js/errorCheck.js"></script>
-
-
     </head>
 
     <!--Affichage du site-->

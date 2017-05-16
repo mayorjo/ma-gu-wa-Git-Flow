@@ -1,16 +1,16 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: wassenbeje
- * Date: 05.04.2017
- * Time: 15:31
+ * ETML
+ * Auteur: Jérôme Wassenberg
+ * Date: 21.03.2017
+ * Description: Page d'inscription des enseignants
  */
 include "include/head.php"
 ?>
 <link rel="stylesheet" type="text/css" href="../../ressources/css/registerTeacher.css">
 <body>
     <div id="form">
-        <form action="traitement/registerTeacherTraitement.php" method="POST" enctype="multipart/form-data" onsubmit="return checkForm(this)">
+        <form action="#" method="POST" enctype="multipart/form-data">
 
             <h2>INSCRIPTION</h2>
 
@@ -21,7 +21,7 @@ include "include/head.php"
 
             <div class="right">
                 <span class="titleForm">Prénom</span><br>
-                <input class="champs" type="text" name="firstname" placeholder="..."><br>
+                <input class="champs" type="text" name="lastname" placeholder="..."><br>
             </div>
 
             <div class="left">
@@ -40,7 +40,7 @@ include "include/head.php"
             </div>
 
             <div class="right">
-                <span class="titleForm">NPA°</span><br>
+                <span class="titleForm">N°</span><br>
                 <input class="champs numbre" type="text" name="streetNumbre" placeholder="..."><br>
             </div>
 
