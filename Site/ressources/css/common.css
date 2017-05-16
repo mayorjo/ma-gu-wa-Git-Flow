@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /**
 *   ETML
 *   Auteur : Jérôme Wassenberg
@@ -75,4 +76,83 @@ footer{
 #copyright{
     margin-top: 1.4vmin;
     margin-left: 5vmin;
+=======
+/**
+*   ETML
+*   Auteur : Jérôme Wassenberg
+*   Date : 21.03.2017
+*   Description : Page de style générale
+**/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+ul li a{
+    color: white;
+    font-size: 1.13vmax;
+    text-decoration: none;
+    margin-left: 5.5vmin;
+}
+ul li a:visited{
+    text-decoration: none;
+}
+ul li a:hover{
+    text-decoration: none;
+}
+
+/***********************HEADER**********************/
+
+header{
+    background-color: #b1d3b9;
+    width: 98.2%;
+    height: 4vmin;
+    padding-top: 2vmin;
+    padding-left: 3vmin;
+}
+
+/************************NAV************************/
+
+ul li{
+    display: inline;
+    margin-left: 5%;
+}
+
+/************************BODY***********************/
+
+body {
+    display: flex;
+    min-height: 100vmin;
+    flex-direction: column;
+}
+
+/***********************SECTION*********************/
+
+section{
+    height: 77vh;
+    width: 50%;
+    background-color: white;
+    opacity: 0.98;
+    margin: 0 auto;
+    padding: 2vmin 10vmin 10vmin;
+}
+
+/***********************FOOTER**********************/
+
+footer{
+    position: fixed;
+    bottom: 0;
+    color: white;
+    background-color: #b1d3b9;
+    width: 100%;
+    font-size: 1.13vmax;
+    text-decoration: none;
+    height: 5vmin;
+}
+
+#copyright{
+    margin-top: 1.4vmin;
+    margin-left: 5vmin;
+>>>>>>> PHP-IncriptionProf
 }
