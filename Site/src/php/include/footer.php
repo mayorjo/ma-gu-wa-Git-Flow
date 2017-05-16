@@ -6,10 +6,9 @@
  * Description: Page d'accueil du site
  */
 ?>
-
-    <footer class="page-footer blue">
-        <div class="footer-copyright">
-            <div class="container">
+    <footer>
+        <div>
+            <div id="copyright">
                 © 2016 Copyright ETML
             </div>
         </div>

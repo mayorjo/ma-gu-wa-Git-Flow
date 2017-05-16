@@ -39,10 +39,10 @@
                         <a href="viewStudentTeacher.php">Elèves & Formateurs</a>
                     </li>
                     <li>
-                        <a href="commentCours.php">Remarques</a>
+                        <a href="remarques.php">Remarques</a>
                     </li>
                     <li>
-                        <a href="registerToCours.php">S'inscrire à un cours</a>
+                        <a href="registerToCours.php">S'inscrire en tant qu'élève</a>
                     </li>
                 </ul>
             </nav>

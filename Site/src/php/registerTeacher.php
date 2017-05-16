@@ -1,16 +1,16 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: wassenbeje
- * Date: 05.04.2017
- * Time: 15:31
+ * ETML
+ * Auteur: Jérôme Wassenberg
+ * Date: 21.03.2017
+ * Description: Page d'inscription des enseignants
  */
 include "include/head.php"
 ?>
 <link rel="stylesheet" type="text/css" href="../../ressources/css/registerTeacher.css">
 <body>
     <div id="form">
-        <form action="traitement/registerTeacherTraitement.php" method="POST" enctype="multipart/form-data">
+        <form action="treatement/treatementRegisterTeacher.php" method="POST" enctype="multipart/form-data">
 
             <h2>INSCRIPTION</h2>
 
@@ -21,7 +21,7 @@ include "include/head.php"
 
             <div class="right">
                 <span class="titleForm">Prénom</span><br>
-                <input class="champs" type="text" name="firstname" placeholder="..."><br>
+                <input class="champs" type="text" name="lastname" placeholder="..."><br>
             </div>
 
             <div class="left">
@@ -31,7 +31,7 @@ include "include/head.php"
 
             <div class="right">
                 <span class="titleForm">N° Téléphone</span><br>
-                <input class="champs" type="text" name="phone" placeholder="..."><br>
+                <input class="champs" type="text" name="phone" placeholder="0XX XXX XX XX"><br>
             </div>
 
             <div class="left">
@@ -41,7 +41,7 @@ include "include/head.php"
 
             <div class="right">
                 <span class="titleForm">NPA°</span><br>
-                <input class="champs numbre" type="text" name="streetNumbre" placeholder="..."><br>
+                <input class="champs numbre" type="text" name="zipcode" placeholder="XXXX"><br>
             </div>
 
             <div class="left">
@@ -51,7 +51,7 @@ include "include/head.php"
 
             <div class="right">
                 <span class="titleForm">N°AVS</span><br>
-                <input class="champs" id="avs" type="text" name="avs" placeholder="..."><br>
+                <input class="champs" id="avs" type="text" name="avs" placeholder="756.XXXX.XXXX.XX"><br>
             </div>
 
             <button id="submit" type="submit">Ajouter</button>
