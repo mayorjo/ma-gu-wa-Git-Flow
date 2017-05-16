@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Mer 05 Avril 2017 à 15:06
+-- Généré le :  Mar 16 Mai 2017 à 13:35
 -- Version du serveur :  5.7.11
 -- Version de PHP :  7.0.4
 
@@ -19,6 +19,18 @@ SET time_zone = "+00:00";
 --
 -- Base de données :  `db_gesproj2`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `t_comment`
+--
+
+CREATE TABLE `t_comment` (
+  `comComment` text NOT NULL,
+  `idStudent` int(11) NOT NULL,
+  `idTraining` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -45,7 +57,8 @@ INSERT INTO `t_former` (`idFormer`, `forName`, `forFirstname`, `forAddress`, `fo
 (1, 'Gruaz', 'Gilbert', 'Route du bourgot 4', 'ggz@signe.ch', '01450174521', 'Professeur', '132.7894.6545.76'),
 (2, 'Stucki', 'Isabelle', 'Rue dela cuisine 1', 'jes@ispas.moi', '465988635441', 'Professeur', '784.6514.3548.56'),
 (3, 'Karim', 'Bourhala', 'Ch. de la casquette du diable 5', 'vouallebien@assitantsocial.ch', '654654654654', 'Professeur', '546.4916.5845.66'),
-(4, 'Patrick', 'Chenaux', 'Avenue du couloir infini 42', 'ilestpasla@infiniti.com', '654651635161', 'Professeur', '654.7841.4986.35');
+(4, 'Patrick', 'Chenaux', 'Avenue du couloir infini 42', 'ilestpasla@infiniti.com', '654651635161', 'Professeur', '654.7841.4986.35'),
+(5, 'mayor', 'Boris', 'chemin du soleil levant 5', 'mayorjo@etml', '07941374134141', 'mon métier', '456-41546-54631-111');
 
 -- --------------------------------------------------------
 
@@ -54,7 +67,7 @@ INSERT INTO `t_former` (`idFormer`, `forName`, `forFirstname`, `forAddress`, `fo
 --
 
 CREATE TABLE `t_participate` (
-  `parValidate` tinyint(1) NOT NULL,
+  `parValidate` tinyint(1) NOT NULL COMMENT '0 = Non validé / 1 = Validé',
   `idTraining` int(11) NOT NULL,
   `idStudent` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -126,8 +139,8 @@ INSERT INTO `t_student` (`idStudent`, `stuName`, `stuFirstname`, `stuAddress`, `
 (1, 'Trou', 'Jean', 'Ch. des fleurs toutes vertes 3', 'trouje@hotmail.com', '079 479 81 87', '123.1234.1234.12'),
 (2, 'Terrieur', 'Alex', 'Rte. de l’intérieur 8', 'jsuisdedans@yahoo.fr', '077 654 25 78', '147.1478.1478.41'),
 (3, 'Colombo', 'Fabian', 'Rte de l\'inspecteur 3', 'jesuisunwarrior@hotmail.com', '078 471 62 95', '164.1456.6154.20'),
-(4, 'Jonathan', 'Mayor', 'Ch. de la Chine 7', 'mayorjonat@yahoo.fr', '021 955 53 58', '768.1654.5245.32'),
-(5, 'Gomes', 'André', 'Route de la gare 8', 'gomess@gmail.com', '079 562 84 35', '156.3786.1987.20'),
+(4, 'Jonathan', 'Mayor', 'Ch. de la Chine 7', 'lamijonat@yahoo.fr', '021 955 53 58', '768.1654.5245.32'),
+(5, 'Gomes', 'André', 'Route de la gare 8', 'juandossantospitaoliveira@gmail.com', '079 562 84 35', '156.3786.1987.20'),
 (6, 'Thomas', 'Aurélien', 'Rte. de la Grèce 9', 'oreille@yahoo.fr', '077 652 84 61', '543.1985.4532.23'),
 (7, 'Jérome', 'Wassenberg', 'Ch. de l\'eau de la montagne 9', 'wassebeje@etml.educanet2.ch', '076 264 95 34', '032.7686.7368.32'),
 (8, 'Dadié', 'Samuel', 'Route sombre 2', 'daddy@gmail.com', '079 523 95 59', '213.3786.1879.56'),
@@ -162,6 +175,13 @@ INSERT INTO `t_training` (`idTraining`, `traWording`, `traDuration`, `traStartDa
 --
 -- Index pour les tables exportées
 --
+
+--
+-- Index pour la table `t_comment`
+--
+ALTER TABLE `t_comment`
+  ADD KEY `commentIdStudent` (`idStudent`),
+  ADD KEY `commentIdTraining` (`idTraining`);
 
 --
 -- Index pour la table `t_former`
@@ -204,7 +224,7 @@ ALTER TABLE `t_training`
 -- AUTO_INCREMENT pour la table `t_former`
 --
 ALTER TABLE `t_former`
-  MODIFY `idFormer` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `idFormer` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT pour la table `t_sequence`
 --
@@ -223,6 +243,13 @@ ALTER TABLE `t_training`
 --
 -- Contraintes pour les tables exportées
 --
+
+--
+-- Contraintes pour la table `t_comment`
+--
+ALTER TABLE `t_comment`
+  ADD CONSTRAINT `t_comment_ibfk_1` FOREIGN KEY (`idStudent`) REFERENCES `t_student` (`idStudent`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `t_comment_ibfk_2` FOREIGN KEY (`idTraining`) REFERENCES `t_training` (`idTraining`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Contraintes pour la table `t_participate`
