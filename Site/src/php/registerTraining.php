@@ -23,7 +23,7 @@ $name = $_GET['name'];
 
         <div class="left">
             <span class="titleForm">Nom</span><br>
-            <input type="text" class="champText champs" name="name"  value="<?php echo $id ?>"><br>
+            <input type="text" class="champText champs" name="name"  value="<?php echo $name ?>"><br>
         </div>
         <?php
         $connector = new PDOLink();
@@ -58,6 +58,11 @@ $name = $_GET['name'];
                 </select>
             </label>
         </p>
+
+        <div class="hidden">
+            <span class="titleForm"></span><br>
+            <input type="hidden"  name="idStudent"  value="<?php echo $id ?>"><br>
+        </div>
 
         <button id="submit" type="submit">Envoyer</button>
 

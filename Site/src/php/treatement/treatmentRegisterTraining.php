@@ -8,7 +8,7 @@
 
 include '../functions/PDOLink.php';
 
-$idStudent = $_POST['name'];
+$idStudent = $_POST['idStudent'];
 $training = $_POST['training'];
 
 

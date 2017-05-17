@@ -1,0 +1,66 @@
+/**
+*   ETML
+*   Auteur : Jérôme Wassenberg
+*   Date : 21.03.2017
+*   Description : Page de style de la page de visualisation des élèves et des enseignants
+**/
+
+body{
+    background-image: url("../../ressources/images/blackboard.png");
+    background-attachment: fixed;
+    height: 100%;
+}
+
+#container{
+    height: 90%;
+    width: 90%;
+    margin: auto;
+    background-color: #eeeeee;
+    box-shadow: 7px 6px 61px -17px rgba(0,0,0,0.75);
+    padding: 2vmin;
+}
+
+#photo img{
+    width: 40vmin;
+    height: 40vmin;
+    border: 5px solid black;
+}
+
+#photo{
+    width: 40vmin;
+    height: 40vmin;
+}
+
+h1{
+    text-align: center;
+    margin-top: 3vmin;
+    padding-bottom: 2vmin;
+    font-size: 2.7vmin;
+}
+
+#informations{
+    font-size: 1.5vmin;
+    margin-top: -35vmin;
+    margin-left: 46vmin;
+    text-decoration: underline;
+}
+
+#link{
+    text-align: center;
+    margin-left: 28%;
+    margin-top: 4vmin;
+    width: 40%;
+}
+
+#link img{
+    border-radius: 100px;
+    width: 100%;
+    height: 40%;
+}
+
+a{
+    font-size: 2.3vmin;
+    text-decoration: none;
+    color: black;
+}
+
