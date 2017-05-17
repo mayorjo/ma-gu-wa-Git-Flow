@@ -7,7 +7,17 @@
  */
 
 #Ajout de la partie HEADER
-include "include/head.php"
+include "include/head.php";
+include "functions/PDOLink.php";
+
+#Ouvre une nouvelle connexion à la base de données
+$connector = new PDOLink();
+
+#Inserer la requête dans un variable "query"
+$query = "SELECT traWording, idTraining FROM t_training";
+
+#Lance la requête
+$req = $connector->executeQuery($query);
 ?><!------------------------------------------------------------------------------------------------------------------->
 
 <!--Ajout du fichier style-->
@@ -18,7 +28,7 @@ include "include/head.php"
     <div id="form">
 
         <!--Début du formulaire-->
-        <form action="#" method="POST" enctype="multipart/form-data">
+        <form action="treatement/treatementRemarques.php" method="POST" enctype="multipart/form-data">
 
             <h2>Remarques</h2>
 
@@ -31,8 +41,26 @@ include "include/head.php"
             <!--Champ Prénom-->
             <div class="right">
                 <span class="titleForm">Prénom</span><br>
-                <input class="champs" type="text" name="lastname" placeholder="..."><br>
+                <input class="champs" type="text" name="firstname" placeholder="..."><br>
             </div>
+
+            <p>
+                <!--Affichage des cours-->
+                <label for="training">Cours :
+                    <select name="training" id="training">
+
+                        <?php
+                        #Préparation des données
+                        $data = $connector->prepareData($req);
+                        foreach($data as $training)
+                        {
+                            ?><option value='<?php echo $training['idTraining'] ?>'> <?php echo $training['traWording'] ?></option><?php
+                        }
+                        ?>
+                    </select>
+                </label>
+            </p>
+            <br>
 
             <!--Champ MESSAGE-->
             <div class="left">
