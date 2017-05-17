@@ -1,13 +1,15 @@
 /**
 *   ETML
-*   Auteur : Jérôme Wassenberg
+*   Auteur : Jérôme Wassenberg, Jonathan Mayor, Timothée Guggisberg
 *   Date : 21.03.2017
 *   Description : Page de style de la page d'accueil
 **/
 
 body{
-    background-image: url("../../ressources/images/test.jpg");
+    background-image: url("../images/index_wallpaper.jpg");
     background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 section{

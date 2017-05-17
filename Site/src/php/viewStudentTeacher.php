@@ -1,29 +1,44 @@
 <?php
 /**
- * ETML
- * Auteur: Jérôme Wassenberg
- * Date: 21.03.2017
- * Description: Page de visualisation des élèves et des enseignants
- **/
+ *   ETML
+ *   Auteur : Jérôme Wassenberg, Jonathan Mayor, Timothée Guggisberg
+ *   Date : 21.03.2017
+ *   Brief : Page de visualisation des élèves / enseignants
+ */
 
+#Ajout de la partie HEADER et du fichier de connexion à la base de données
 include 'include/head.php';
 include 'functions/PDOLink.php';
+
+#Nouvelle connexion à la base de données
 $PDOLink = new PDOLink();
+
+#Stockage des requêtes SQL
 $query1="SELECT stuName, stuFirstname, idStudent FROM t_student";
 $query2="SELECT forName, forFirstname, idFormer FROM t_former";
+
+#Execution des requêtes
 $req1 = $PDOLink->executeQuery($query1);
 $req2 = $PDOLink->executeQuery($query2);
-?>
-<link type="text/css" rel="stylesheet" href="../../ressources/css/viewStudentTeacher.css">
-<body>
+?><!------------------------------------------------------------------------------------------------------------------->
 
+<!--Ajout du fichier style-->
+<link type="text/css" rel="stylesheet" href="../../ressources/css/viewStudentTeacher.css">
+
+<!--Affichage des données du site-->
+<body>
     <section>
 
         <div id="container">
+
+            <!--Titre-->
             <h1>Elèves</h1>
 
                 <?php
+                #Préparation des données
                 $result1 = $PDOLink->prepareData($req1);
+
+                #Affichage des informations des élèves
                 foreach($result1 as $display)
                 {
                     ?>
@@ -45,10 +60,14 @@ $req2 = $PDOLink->executeQuery($query2);
                 }
                 ?>
 
+                <!--Titre-->
                 <h1>Enseignants</h1>
 
                 <?php
+                #Préparation des données
                 $result2 = $PDOLink->prepareData($req2);
+
+                #Affichage des informations des enseignants
                 foreach($result2 as $display)
                 {
                     ?>
@@ -68,13 +87,16 @@ $req2 = $PDOLink->executeQuery($query2);
                     <?php
                 }
                 ?>
-        </div>
+        </div><!--container-->
     </section>
 </body>
 
 <?php
+#Fermeture de la connexion à la base de données
 $PDOLink->closeCursor($req1);
 $PDOLink->closeCursor($req2);
 $PDOLink->destroyObject();
+
+#Ajout de la partie FOOTER
 include 'include/footer.php';
 ?>
