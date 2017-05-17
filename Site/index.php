@@ -1,9 +1,9 @@
 <?php
 /**
- * ETML
- * Auteur: Jérôme Wassenberg
- * Date: 21.03.2017
- * Description: Page d'indexation
+ *   ETML
+ *   Auteur : Jérôme Wassenberg, Jonathan Mayor, Timothée Guggisberg
+ *   Date : 21.03.2017
+ *   Brief : Page d'indexation
  */
 ?>
 

@@ -1,9 +1,9 @@
 <?php
 /**
- * ETML
- * User: mayorjo
- * Date: 16.05.2017
- * Summmary : Page de traitement pour l'enregistrement d'un professeur
+ *   ETML
+ *   Auteur : Jérôme Wassenberg, Jonathan Mayor, Timothée Guggisberg
+ *   Date : 21.03.2017
+ *   Brief : Page de traitement pour l'enregistrement d'un professeur
  */
 
 //Variables
@@ -20,7 +20,6 @@ $avs = $_POST["avs"];
 $fieldControl = false;
 
 //Regex
-
 $regexName = "#^[a-zA-Z\-\ \é\è\ö]+$#";
 $regexLastname = "#^[a-zA-Z\-\ \é\è\ö]+$#";
 $regexMail = "#^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]{2,}\.[a-z]{2,4}$#";

@@ -1,11 +1,10 @@
 <?php
-/**
- * ETML
- * Auteur: Jérôme Wassenberg
- * Date: 29.03.2017
- * Description: Partie HEAD des pages HTML
- */
-
+    /**
+     *   ETML
+     *   Auteur : Jérôme Wassenberg, Jonathan Mayor, Timothée Guggisberg
+     *   Date : 21.03.2017
+     *   Description: Partie HEAD des pages HTML
+     */
 ?>
 <!--PAGE HTML-->
 <!DOCTYPE html>

@@ -1,9 +1,16 @@
 /**
 *   ETML
-*   Auteur : Jérôme Wassenberg
+*   Auteur : Jérôme Wassenberg, Jonathan Mayor, Timothée Guggisberg
 *   Date : 21.03.2017
 *   Description : Page de style de la page d'inscription des enseignants
 **/
+
+body{
+    background-image: url("../images/wallpaper_registerTeacher.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 #form{
     margin: auto;
@@ -11,27 +18,15 @@
     background-color: #caf1eb;
     opacity: 0.98;
     width: 70vmin;
-    height: 55vmin;
     padding: 1.5%;
     border-radius: 2%;
-}
-
-body{
-    background-image: url("../../ressources/images/registerTeacher.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
+    height: 60vmin;
 }
 
 H2{
     text-align: center;
     font-size: 4vmin;
     padding-bottom: 2vmin;
-}
-
-form{
-    width: 70vmin;
-    height: 60vmin;
 }
 
 button{

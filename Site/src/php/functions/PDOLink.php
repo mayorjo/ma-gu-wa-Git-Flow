@@ -1,14 +1,14 @@
 <?php
 /**
- * ETML
- * Auteur : Jérôme Wassenberg
- * Date: 20.03.2017
- * Description : Fonctions de connexion à la BD
+ *   ETML
+ *   Auteur : Jérôme Wassenberg, Jonathan Mayor, Timothée Guggisberg
+ *   Date : 21.03.2017
+ *   Description : Fonctions de connexion à la BD
  */
 include "config.php";
 class PDOlink {
 
-    /** @var PDO $connector */
+    /** @var PDO $connector (constructeur par défaut)*/
     private $connector;
 
     #Etablissement de la connexion
@@ -44,3 +44,4 @@ class PDOlink {
         unset($connector);
     }
 }
+?>
