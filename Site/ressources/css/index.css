@@ -1,0 +1,90 @@
+/**
+*   ETML
+*   Auteur : Jérôme Wassenberg, Jonathan Mayor, Timothée Guggisberg
+*   Date : 21.03.2017
+*   Description : Page de style de la page d'accueil
+**/
+
+body{
+    background-image: url("../images/index_wallpaper.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+section{
+    background-color: white;
+    opacity: 0.98;
+}
+
+#welcomeText{
+    width: 80vmin;
+    height: 5vmin;
+    text-align: center;
+    margin: auto;
+}
+
+#welcomeText h1{
+    font-size: 3vmin;
+}
+
+#welcomeText p{
+    font-size: 2vmin;
+}
+
+.indexImages{
+    width: 35vmin;
+    height: 25vmin;
+    padding-bottom: 1vmin;
+}
+
+.leftImage{
+    float: left;
+    margin-top: 8vmin;
+    width: 35vmin;
+    height: 30vmin;
+}
+
+.rightImage{
+    float: right;
+    margin-top: 8vmin;
+    width: 35vmin;
+    height: 30vmin;
+}
+
+#images div a{
+    color: black;
+    text-decoration: none;
+}
+
+#images div{
+    box-shadow: 15px 10px 54px -12px rgba(0,0,0,0.62);
+}
+
+#images a:visited{
+    color: black;
+}
+
+#images a:hover{
+    text-decoration: underline;
+}
+
+#link1{
+    margin-left: 9vmin;
+    font-size: 1.8vmin;
+}
+
+#link2{
+    margin-left: 10vmin;
+    font-size: 1.8vmin;
+}
+
+#link3{
+    margin-left: 4vmin;
+    font-size: 1.8vmin;
+}
+
+#link4{
+    margin-left: 10vmin;
+    font-size: 1.8vmin;
+}

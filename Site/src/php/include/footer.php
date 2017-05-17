@@ -1,16 +1,17 @@
 <?php
-/**
- * ETML
- * Auteur: Jérôme Wassenberg
- * Date: 21.03.2017
- * Description: Page d'accueil du site
- */
+    /**
+     *   ETML
+     *   Auteur : Jérôme Wassenberg, Jonathan Mayor, Timothée Guggisberg
+     *   Date : 21.03.2017
+     *   Description: Page d'accueil du site
+     */
 ?>
 
-    <footer class="page-footer blue">
-        <div class="footer-copyright">
-            <div class="container">
-                © 2016 Copyright ETML
-            </div>
+<!--Affichage du footer-->
+<footer>
+    <div>
+        <div id="copyright">
+            © 2016 Copyright ETML
         </div>
-    </footer>
+    </div>
+</footer>

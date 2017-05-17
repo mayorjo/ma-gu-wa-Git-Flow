@@ -1,0 +1,11 @@
+Jérôme : 	Peu de temps, avancement dans le site avec les plusieurs forms à faire
+		Problème : -
+		Avancement sur la connexion entre la BDD et le site web
+
+Jonathan : 	Avancement dans les formulaires, passage en GIT FLOW
+		Problème : Plusieurs bugs avec GIT FLOW
+		Changement de Repository suite au plusieurs bug survenu, recréation d'un repo avec la fonctionnalité GIT FLOW dès le départ, avancement dans le site web
+
+Timothée : 	Peu de temps, renouvellement de Trello, correction de la base de donnée
+		Problème : -
+		Mise à jour des User Stories connaissant maintenant comment les nommer etc... passe en GIT FLOW, préparation de la présentation

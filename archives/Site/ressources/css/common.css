@@ -1,8 +1,8 @@
 /**
 *   ETML
-*   Auteur : Jérôme Wassenberg, Jonathan Mayor, Timothée Guggisberg
+*   Auteur : Jérôme Wassenberg
 *   Date : 21.03.2017
-*   Description : Page de style générale, appliqué à toutes les pages où le site est affiché
+*   Description : Page de style générale
 **/
 
 *{
@@ -10,15 +10,26 @@
     padding: 0;
     font-family: Arial, sans-serif;
 }
+ul li a{
+    color: white;
+    font-size: 1.13vmax;
+    text-decoration: none;
+    margin-left: 5.5vmin;
+}
+ul li a:visited{
+    text-decoration: none;
+}
+ul li a:hover{
+    text-decoration: none;
+}
 
 /***********************HEADER**********************/
 
 header{
     background-color: #b1d3b9;
-    /*width: 100%;*/
+    width: 100%;
     height: 4vmin;
     padding-top: 2vmin;
-    padding-left: 3vmin;
 }
 
 /************************NAV************************/
@@ -28,32 +39,20 @@ ul li{
     margin-left: 5%;
 }
 
-ul li a{
-    color: white;
-    font-size: 1.13vmax;
-    text-decoration: none;
-    margin-left: 5.5vmin;
-}
-
-ul li a:visited{
-    text-decoration: none;
-}
-
 /************************BODY***********************/
 
 body {
     display: flex;
-    min-height: 100vmin;
+    min-height: 100vh;
     flex-direction: column;
 }
 
 /***********************SECTION*********************/
 
 section{
-    height: 77vh;
-    width: 50%;
-    background-color: white;
-    opacity: 0.98;
+    background-color: #cfeefa;
+    height: 73vmin;
+    width: 100vmin;
     margin: 0 auto;
     padding: 2vmin 10vmin 10vmin;
 }
@@ -61,17 +60,10 @@ section{
 /***********************FOOTER**********************/
 
 footer{
-    position: fixed;
-    bottom: 0;
     color: white;
     background-color: #b1d3b9;
     width: 100%;
     font-size: 1.13vmax;
     text-decoration: none;
     height: 5vmin;
-}
-
-#copyright{
-    margin-top: 1.4vmin;
-    margin-left: 5vmin;
 }

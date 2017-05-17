@@ -1,10 +1,11 @@
 <?php
-    /**
-     *   ETML
-     *   Auteur : Jérôme Wassenberg, Jonathan Mayor, Timothée Guggisberg
-     *   Date : 21.03.2017
-     *   Description: Partie HEAD des pages HTML
-     */
+/**
+ * ETML
+ * Auteur: Jérôme Wassenberg
+ * Date: 29.03.2017
+ * Description: Partie HEAD des pages HTML
+ */
+
 ?>
 <!--PAGE HTML-->
 <!DOCTYPE html>
@@ -19,6 +20,9 @@
         <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="../../ressources/css/common.css">
         <link rel="stylesheet" type="text/css" href="../../ressources/css/login.css">
+        <script src="../../js/errorCheck.js"></script>
+
+
     </head>
 
     <!--Affichage du site-->
@@ -38,10 +42,10 @@
                         <a href="viewStudentTeacher.php">Elèves & Formateurs</a>
                     </li>
                     <li>
-                        <a href="remarques.php">Remarques</a>
+                        <a href="commentCours.php">Remarques</a>
                     </li>
                     <li>
-                        <a href="registerToCours.php">S'inscrire en tant qu'élève</a>
+                        <a href="registerToCours.php">S'inscrire à un cours</a>
                     </li>
                 </ul>
             </nav>
