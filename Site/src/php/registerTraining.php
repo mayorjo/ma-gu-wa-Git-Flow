@@ -1,75 +1,78 @@
 <?php
 /**
- * ETML
- * User: guggisbeti
- * Date: 16.05.2017
- * Brief : Formulaire d'inscription à un cours
+ *   ETML
+ *   Auteur : Jérôme Wassenberg, Jonathan Mayor, Timothée Guggisberg
+ *   Date : 21.03.2017
+ *   Brief : Formulaire d'inscription à un cours
  */
 
+#Ajout des fchiers HEADER et de connexion à la base de données
 include "functions/PDOLink.php";
-
 include "include/head.php";
 
+#Récupération de l'ID et du nom de l'élève / enseignant
 $id = $_GET['id'];
 $name = $_GET['name'];
-?>
+
+#Ouvre une nouvelle connexion à la base de données
+$connector = new PDOLink();
+
+#Inserer la requête dans un variable "query"
+$query = "SELECT traWording, idTraining FROM t_training";
+
+#Lance la requête
+$req = $connector->executeQuery($query);
+?><!------------------------------------------------------------------------------------------------------------------->
+
+<!--Ajout de la page de style-->
 <link rel="stylesheet" type="text/css" href="../../ressources/css/registerTeacher.css">
 
+<!--Affichage des informations du site-->
 <body>
-<div id="form">
-    <form action="treatement/treatmentRegisterTraining.php" method="POST" enctype="multipart/form-data">
+    <div id="form">
 
-        <h2>INSCRIPTION</h2>
+        <!--Affichage du formulaire-->
+        <form action="treatement/treatmentRegisterTraining.php" method="POST" enctype="multipart/form-data">
 
-        <div class="left">
-            <span class="titleForm">Nom</span><br>
-            <input type="text" class="champText champs" name="name"  value="<?php echo $name ?>"><br>
-        </div>
-        <?php
-        $connector = new PDOLink();
+            <h2>INSCRIPTION</h2>
 
-        //2ème : Faire la requête
-        //Inserer la requête dans un variable "query"
-        $query = "SELECT traWording, idTraining FROM t_training";
+            <!--Champ NOM-->
+            <div class="left">
+                <span class="titleForm">Nom</span><br>
+                <input type="text" class="champText champs" name="name"  value="<?php echo $name ?>"><br>
+            </div>
 
-        //Lance la requête
-        $req = $connector->executeQuery($query);
+            <p>
+                <!--Affichage des cours-->
+                <label for="training">Cours :
+                    <select name="training" id="training">
 
-        //Preparation des données à s'afficher
-        $data = $connector->prepareData($req);
-        ?>
-        <p>
-            <label for="training">Cours :
-                <select name="training" id="training">
-
-                    <?php
-
-                    foreach($data as $training)
-                    {
+                        <?php
+                        #Préparation des données
+                        $data = $connector->prepareData($req);
+                        foreach($data as $training)
+                            {
+                                ?><option value='<?php echo $training['idTraining'] ?>'> <?php echo $training['traWording'] ?></option><?php
+                            }
                         ?>
-                            <option value='<?php echo $training['idTraining'] ?>'> <?php echo $training['traWording'] ?></option>
-                         <?php
-                    }
-                    //Ecrase la requête
-                    $connector->closeCursor($req);
-                    //Stop la connexion
-                    $connector->destroyObject();
-                    ?>
-                </select>
-            </label>
-        </p>
+                    </select>
+                </label>
+            </p>
 
-        <div class="hidden">
-            <span class="titleForm"></span><br>
-            <input type="hidden"  name="idStudent"  value="<?php echo $id ?>"><br>
-        </div>
+            <div class="hidden">
+                <span class="titleForm"></span><br>
+                <input type="hidden"  name="idStudent"  value="<?php echo $id ?>"><br>
+            </div>
 
-        <button id="submit" type="submit">Envoyer</button>
-
-    </form>
-</div>
+            <!--Bouton d'envoi-->
+            <button id="submit" type="submit">Envoyer</button>
+        </form>
+    </div><!--form-->
 </body>
 
 <?php
+#Fermeture de la connexion à la base de données
+$connector->closeCursor($req);
+$connector->destroyObject();
 include "include/footer.php";
 ?>
