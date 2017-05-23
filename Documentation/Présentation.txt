@@ -1,0 +1,70 @@
+Présentation 1 : Mandant
+
+- Plan du projet
+Planification à partir de Trello en méthode Scrum
+Lancement dans le projet avec la création de la BDD et du site (partie principale)
+avec comme versionning GIT (Interface GitKraken)
+
+- Résltat du projet
+Création complète de la base de donnée
+...
+
+- Méthode 
+Projet sous format Scrum avec l'utilisation de Trello pour la création de User Story,
+l'utilisation de GIT pour le versionning, passage à GIT FLOW au millieu de projet afin
+de pratiquer le fonctionnement de cette méthode 
+
+- Problème rencontré
+Méthodologie Scrum, départ du projet difficile suite au non connaissance de Scrum 
+ex. Création des User Story  
+
+Pour un Product BurnDown les point sont considéré comme consumé
+le product owner les à mis comme "Done
+MAIS 
+Lorsque c'est un sprint BurnDown cette manière de faire n'est pas possible nous avons donc
+mis les points consumé lorsque la User Story passait en "To be reviewe
+
+
+BurnDown Chart -> à quel moment doit-on consumer les points -> résolution :
+-> Product Burndown, dès que le product owner l'a défini comme "Done"
+-> Sprint Burndown, dès que la User Story est conisérée comme "To be reviewed" par son créateur
+
+GIT
+Difficulté avec GitKraken au départ du projet, début mal organisé -> a force de l'utiliser
+
+Passage à GIT FLOW 
+Tout d'abord, le passage c'est fait sur le repository du projet normal, mais beaucoup de bugs
+on survenu lors du changement de méthode GIT à GIT FLOW -> Recréatio d'un repository avec 
+la méthode GIT FLOW dès le départ, beaucoup plus ordonné suite à la création du nouveau dépot
+
+Projet 
+Compréhension du projet au départ non-aquise, mais suite à plusieurs relecture du cahier des 
+charge commencement de la création des parties PHP du site
+
+- Améliorations envisageables
+Prendre plus de temps au départ du projet à exploiter les outils donnés
+
+
+Présentation 2 : Pour la classe
+
+- Coordination
+Scrum master : Timothée
+Bonne coordination au sein du groupe, utilisation de GIT par tous afin de partager son travail
+avec le groupe, explication des problème à tout le groupe afin d'y trouver une solution
+
+- Organisation
+Organisation en constante augmentation dans le groupe, au départ l'organisation était difficile
+à prendre en main dans tout le groupe, que ce soit dans l'utilisation des outils ou de la
+création du projet en lui même.
+Mais a force d'être dans le projet, l'organisation c'est améliorée et suite au maitrise des
+outils fourni et à l'exploitation des points fort de chacun dans l'équipe, la coordination
+du groupe s'est montrée efficace
+
+- Amélioration de l'organisation
+En apprendre plus sur chacun dans sa manière de travailler afin de pouvoir se distribuer les
+bonne tâche qui seront les plus appropriées à la personne en question.
+
+- Acquisition durant le projet
+Exploitation de la méthode Scrum dans un "vrai" projet -> problème impossible de reproduire de 
+la même manière qu'en entreprise étant donné la taille des Sprint et de seulement une sessions 
+par semaine
